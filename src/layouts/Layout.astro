@@ -1,0 +1,24 @@
+---
+interface Props {
+  title: string
+  description: string
+}
+const { title, description } = Astro.props
+import { HeadHrefLangs } from 'astro-i18next/components'
+---
+
+<!doctype html>
+<html lang='en'>
+  <head>
+    <meta charset='UTF-8' />
+    <meta name='description' content={description} />
+    <meta name='viewport' content='width=device-width' />
+    <link rel='icon' type='image/webp' href='/amof_favicon.webp' />
+    <meta name='generator' content={Astro.generator} />
+    <title>{title}</title>
+    <HeadHrefLangs />
+  </head>
+  <body>
+    <slot />
+  </body><style is:global></style>
+</html>

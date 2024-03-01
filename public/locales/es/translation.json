@@ -1,0 +1,34 @@
+{
+    "site":{
+        "title":"Americas´ mobility of the future 2024",
+        "description":"Plataforma integral para presentar las últimas tendencias, innovaciones, conocimientos, desarrollo y tecnología que están redefiniendo la movilidad."
+    },
+    "home":{
+        "slogan":"La feria de electromovilidad más importante del continente",
+        "event_date":"9 – 11 de octubre de 2024",
+        "wanna_be_exhibitor": "¿Quieres ser<br /> Expositor?",
+        "know_more": "Conoce más<br /> sobre AMOF",
+        "about_event": "Acerca del evento",
+        "about_description": "Plataforma integral para presentar las últimas tendencias, innovaciones, conocimientos, desarrollo y tecnología que están redefiniendo la movilidad.",
+        "wanna_be_exhibitors": "¿Quieres ser expositor en Americas´ mobility of the future 2024?<br />Déjanos tus datos de contacto ahora y nuestro equipo te dará asistirá para que maximices las oportunidades comerciales que AMOF ofrece.",
+        "become_exhibitor": "¡Aprovecha esta gran oportunidad para convertirte en expositor!",
+        "choose_option": "Elige una opción",
+        "option_1": "Movilidad del futuro, transporte y vehículos ligeros",
+        "option_2": "Infraestructura y sostenibilidad",
+        "option_3": "Servicios de movilidad e innovaciones",
+        "option_4": "Ecosistema de movilidad eléctrica & proveedores de servicios",
+        "option_5": "Otros",
+        "phone": "Ingresa tu número de teléfono",
+        "message": "Dejanos saber como podemos ayudarte",
+        "send": "Enviar",
+        "loading": "Enviando ...",
+        "why": "¿Por qué",
+        "participate": "participar?",
+        "why_participate_1": "Aprende de expertos internacionales y tomadores de decisión",
+        "why_participate_2": "Impulsa la transición y transformación de la movilidad del futuro en México",
+        "why_participate_3": "Accede a las últimas tecnologías de la movilidad sustentable",
+        "why_participate_4": "Descubre oportunidades de negocio y el potencial en movilidad inteligente",
+        "why_participate_5": "Explora novedades en infraestructura sostenible",
+        "testimonials": "TESTIMONIALES DE EXPOSITORES Y VISITANTES"
+    }
+}

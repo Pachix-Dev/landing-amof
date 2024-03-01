@@ -1,0 +1,33 @@
+{
+    "site":{
+        "title":"Americas' Mobility of the Future",
+        "description":"Comprehensive platform to present the latest trends, innovations, knowledge, development and technology that are redefining mobility."
+    },
+    "home":{
+        "slogan":"The most important electromobility trade fair on the continent",
+        "event_date":"October 9 – 11,  2024",
+        "wanna_be_exhibitor": "Do you want to be an exhibitor?",
+        "know_more": "Learn more about AMOF",
+        "about_event": "About the event",
+        "about_description": "Comprehensive platform to present the latest trends, innovations, knowledge, development and technology that are redefining mobility.",
+        "wanna_be_exhibitors": "Would you like to be an exhibitor at Americas' mobility of the future 2024?<br />Leave us your contact details now and our team will assist you in maximizing the business opportunities AMOF has to offer.",
+        "become_exhibitor": "Take advantage of this great opportunity to become an exhibitor!",
+        "choose_option": "Choose an option",
+        "option_1": "Mobility of the future, transportation and light vehicles",
+        "option_2": "Infrastructure and sustainability",
+        "option_3": "Mobility and innovation services",
+        "option_4": "Ecosystem for electric mobility & service providers",
+        "option_5": "Others",
+        "phone": "Enter your phone number",
+        "message": "Let us know how we can help you",
+        "send": "Send",
+        "loading": "Sending ...",
+        "why_participate": "Why PARTICIPATE?",
+        "why_participate_1": "Learn from international experts and decision makers.",
+        "why_participate_2": "Drives the transition and transformation of the mobility of the future in Mexico",
+        "why_participate_3": "Access to the latest technologies for sustainable mobility",
+        "why_participate_4": "Discover business opportunities and potential in smart mobility",
+        "why_participate_5": "Explore what's new in sustainable infrastructure",
+        "testimonials": "TESTIMONIALS FROM EXHIBITORS AND VISITORS"
+    }
+}
