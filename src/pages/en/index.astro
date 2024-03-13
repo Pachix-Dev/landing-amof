@@ -1,8 +1,8 @@
 ---
 import Layout from "../../layouts/Layout.astro";
 import { ContactForm } from "../../components/ContactForm.jsx";
-import { Carousel3d } from "../../components/Carousel3d/Carousel3d.jsx";
 import { changeLanguage, t } from "i18next";
+import Categories from "../../components/Categories.astro";
 
 changeLanguage("en");
 ---
@@ -21,16 +21,16 @@ changeLanguage("en");
         autoplay
         loop
         muted
-        src='/video/LOOP-amof-opt.mp4'
+        src='/video/video amof bg_op.mp4'
         class='absolute top-0 left-0 w-full h-screen object-cover z-[-2]'
       >
       </video>
-      <p class='text-6xl font-bold'>
-        <span class='text-[#03CAFE]'>AM</span><span class='text-[#001A78]'
-          >OF</span
+      <p class='text-6xl font-bold text-center'>
+        <span class='text-[#03CAFE]'>AMERICAS´<br /> mobi</span><span
+          class='text-[#001A78]'>lity of the future</span
         >
       </p>
-      <p class='text-white font-bold text-3xl w-full md:w-3/5 text-center'>
+      <p class='text-white font-bold text-3xl w-full text-center'>
         {t('home.slogan')}
       </p>
       <p class='mt-5 text-white font-bold text-5xl'>
@@ -93,7 +93,7 @@ changeLanguage("en");
       <p class='mt-5 text-lg'>
         {t('home.about_description')}
       </p>
-      <p class='mt-5' set:html={t('home.wanna_be_exhibitors')} />
+      <p class='mt-5 text-lg' set:html={t('home.wanna_be_exhibitors')} />
     </section>
     <section class='mt-10' id='expositor-form'>
       <p class='text-3xl font-bold text-center'>
@@ -113,26 +113,7 @@ changeLanguage("en");
         client:visible
       />
     </section>
-    <section
-      class="mt-10 bg-[url('/img/bgWhyparticipate.webp')] bg-cover bg-center py-32 relative"
-    >
-      <div class='relative z-50 mx-auto container'>
-        <p class='text-white text-6xl font-bold text-center'>
-          {t('home.why')}
-          <span class='text-[#87F9F2]'>
-            {t('home.participate')}
-          </span>
-        </p>
-        <Carousel3d
-          client:only
-          why_participate1={t('home.why_participate_1')}
-          why_participate2={t('home.why_participate_2')}
-          why_participate3={t('home.why_participate_3')}
-          why_participate4={t('home.why_participate_4')}
-          why_participate5={t('home.why_participate_5')}
-        />
-      </div>
-    </section>
+    <Categories />
     <section class='py-10 container mx-auto'>
       <p class='text-3xl text-center font-bold text-gray-600 uppercase'>
         {t('home.testimonials')}

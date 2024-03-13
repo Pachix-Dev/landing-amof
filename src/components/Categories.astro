@@ -1,0 +1,169 @@
+---
+import { t } from 'i18next'
+---
+
+<section class='mt-10 py-20 bg-[#032174] text-white' id='perfil-expositor'>
+  <p class='font-bold uppercase text-4xl text-center'>{t('home.title3')}</p>
+  <div class='mt-10 home-activities text-center'>
+    <div class='home-activities-wrapper'>
+      <div class='relative grid place-items-center'>
+        <img
+          src='/img/bg_categoria1.webp'
+          alt='Categoria 1'
+          class='w-full h-full object-cover absolute z-[-1]'
+        />
+
+        <div class='info'>
+          <p class='py-5 font-bold text-center text-xl'>
+            {t('home.category1')}
+          </p>
+          <ul class='pt-5 ps-4 text-start list-disc text-sm hidden'>
+            <li>{t('home.category1_1')}</li>
+            <li>{t('home.category1_2')}</li>
+            <li>{t('home.category1_3')}</li>
+            <li>{t('home.category1_4')}</li>
+            <li>{t('home.category1_5')}</li>
+          </ul>
+        </div>
+      </div>
+      <div class='relative'>
+        <img
+          src='/img/bg_categoria2.webp'
+          alt='Categoria 1'
+          class='w-full h-full object-cover absolute z-[-1]'
+        />
+        <div class='info'>
+          <p class='py-5 font-bold text-center text-xl'>
+            {t('home.category2')}
+          </p>
+          <ul class='pt-5 ps-4 text-start list-disc text-sm hidden'>
+            <li>{t('home.category2_1')}</li>
+            <li>{t('home.category2_2')}</li>
+            <li>{t('home.category2_3')}</li>
+            <li>{t('home.category2_4')}</li>
+            <li>{t('home.category2_5')}</li>
+            <li>{t('home.category2_6')}</li>
+            <li>{t('home.category2_7')}</li>
+          </ul>
+        </div>
+      </div>
+      <div class='relative'>
+        <img
+          src='/img/bg_categoria3.webp'
+          alt='Categoria 1'
+          class='w-full h-full object-cover absolute z-[-1]'
+        />
+        <div class='info'>
+          <p class='py-5 font-bold text-center text-xl'>
+            {t('home.category3')}
+          </p>
+          <ul class='pt-5 ps-4 text-start list-disc text-sm hidden'>
+            <li>{t('home.category3_1')}</li>
+            <li>{t('home.category3_2')}</li>
+            <li>{t('home.category3_3')}</li>
+            <li>{t('home.category3_4')}</li>
+            <li>{t('home.category3_5')}</li>
+            <li>{t('home.category3_6')}</li>
+            <li>{t('home.category3_7')}</li>
+            <li>{t('home.category3_8')}</li>
+            <li>{t('home.category3_9')}</li>
+            <li>{t('home.category3_10')}</li>
+          </ul>
+        </div>
+      </div>
+      <div class='relative'>
+        <img
+          src='/img/bg_categoria4.webp'
+          alt='Categoria 1'
+          class='w-full h-full object-cover absolute z-[-1]'
+        />
+        <div class='info'>
+          <p class='py-5 font-bold text-center text-xl'>
+            {t('home.category4')}
+          </p>
+          <ul class='pt-5 ps-4 text-start list-disc text-sm hidden'>
+            <li>{t('home.category4_1')}</li>
+            <li>{t('home.category4_2')}</li>
+            <li>{t('home.category4_3')}</li>
+            <li>{t('home.category4_4')}</li>
+            <li>{t('home.category4_5')}</li>
+            <li>{t('home.category4_6')}</li>
+            <li>{t('home.category4_7')}</li>
+            <li>{t('home.category4_8')}</li>
+            <li>{t('home.category4_9')}</li>
+            <li>{t('home.category4_10')}</li>
+            <li>{t('home.category4_11')}</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  .home-activities-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    /* Allow items to wrap on smaller screens */
+    position: relative;
+    z-index: 1;
+    height: auto;
+    /* Adjust to allow content to determine height */
+  }
+
+  .home-activities-wrapper div {
+    width: 0;
+    height: 500px;
+    flex-grow: 1;
+    transition: 0.5s ease;
+    box-sizing: border-box;
+    /* Include padding and border in the width */
+  }
+
+  .home-activities-wrapper div video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.7;
+  }
+
+  .home-activities-wrapper > div:hover {
+    cursor: crosshair;
+    width: 300px;
+    opacity: 1 !important;
+  }
+  .home-activities-wrapper div:hover ul {
+    display: block;
+  }
+
+  .home-activities-wrapper div:hover video {
+    opacity: 1 !important;
+  }
+
+  .home-activities-wrapper .info {
+    width: 100%;
+    font-size: 23px;
+    color: white;
+    font-weight: bold;
+    background: linear-gradient(to bottom, transparent, black);
+    height: 100%;
+    padding: 10px;
+    transition: none;
+    display: grid;
+    place-content: center;
+  }
+
+  @media (max-width: 768px) {
+    .home-activities-wrapper .info {
+      top: 0;
+      height: 100%;
+    }
+    .home-activities-wrapper ul {
+      display: block;
+    }
+    .home-activities-wrapper div {
+      width: 100%;
+      height: 500px;
+    }
+  }
+</style>

@@ -13,12 +13,50 @@ import { HeadHrefLangs } from 'astro-i18next/components'
     <meta charset='UTF-8' />
     <meta name='description' content={description} />
     <meta name='viewport' content='width=device-width' />
-    <link rel='icon' type='image/webp' href='/amof_favicon.webp' />
+    <link rel='icon' type='image/webp' href='/img/amof_favicon.webp' />
     <meta name='generator' content={Astro.generator} />
     <title>{title}</title>
     <HeadHrefLangs />
+    <!-- Meta Pixel Code -->
+    <script is:inline>
+      !(function (f, b, e, v, n, t, s) {
+        if (f.fbq) return
+        n = f.fbq = function () {
+          n.callMethod
+            ? n.callMethod.apply(n, arguments)
+            : n.queue.push(arguments)
+        }
+        if (!f._fbq) f._fbq = n
+        n.push = n
+        n.loaded = !0
+        n.version = '2.0'
+        n.queue = []
+        t = b.createElement(e)
+        t.async = !0
+        t.src = v
+        s = b.getElementsByTagName(e)[0]
+        s.parentNode.insertBefore(t, s)
+      })(
+        window,
+        document,
+        'script',
+        'https://connect.facebook.net/en_US/fbevents.js'
+      )
+      fbq('init', '1579697742806879')
+      fbq('track', 'PageView')
+    </script>
+    <noscript
+      ><img
+        height='1'
+        width='1'
+        style='display:none'
+        src='https://www.facebook.com/tr?id=1579697742806879&ev=PageView&noscript=1'
+      /></noscript
+    >
+    <!-- End Meta Pixel Code -->
   </head>
   <body>
     <slot />
-  </body><style is:global></style>
+    <style is:global></style>
+  </body>
 </html>
