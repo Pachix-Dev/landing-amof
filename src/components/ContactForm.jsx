@@ -105,19 +105,11 @@ export function ContactForm({
             <option value='' defaultValue>
               {choose}
             </option>
-            <option value='Máquinas y Herramientas / Metalworking'>
-              {option1}
-            </option>
-            <option value='Automatización, Robotización y Transmisión / Automation, Robotization & Motion'>
-              {option2}
-            </option>
-            <option value='Logística Inteligente / Smart Logistics'>
-              {option3}
-            </option>
-            <option value='Manufactura Digital y TIC / Digital Factory & ITC'>
-              {option4}
-            </option>
-            <option value='Otros'>{option5}</option>
+            <option value={option1}>{option1}</option>
+            <option value={option2}>{option2}</option>
+            <option value={option3}>{option3}</option>
+            <option value={option4}>{option4}</option>
+            <option value={option5}>{option5}</option>
           </select>
         </div>
         <div>
