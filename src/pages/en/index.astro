@@ -1,7 +1,7 @@
 ---
 import Layout from "../../layouts/Layout.astro";
 import { ContactForm } from "../../components/ContactForm.jsx";
-import { changeLanguage, t } from "i18next";
+import i18next, { changeLanguage, t } from "i18next";
 import Categories from "../../components/Categories.astro";
 
 changeLanguage("en");
@@ -17,14 +17,14 @@ changeLanguage("en");
         alt='americas mobility of the future'
         class='w-52 absolute top-5 left-5'
       />
-      <video
-        autoplay
-        loop
-        muted
-        src='/video/video amof bg_op.mp4'
+
+      <img
+        src={i18next.language === 'es'
+          ? '/img/amof_bf_2025.webp'
+          : '/img/amof_bf_2025_eng.webp'}
+        alt='americas mobility of the future'
         class='absolute top-0 left-0 w-full h-screen object-cover z-[-2]'
-      >
-      </video>
+      />
       <p class='text-6xl font-bold text-center'>
         <span class='text-[#03CAFE]'>AMERICAS´<br /> mobi</span><span
           class='text-[#001A78]'>lity of the future</span
