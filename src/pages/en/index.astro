@@ -41,48 +41,49 @@ changeLanguage("en");
           Poliforum - Léon Guanajuato, México
         </p>
       </div>
+      <div class='mt-10 flex gap-4'>
+        <a
+          href='#expositor-form'
+          class='text-white font-bold flex items-center gap-2 bg-[#60a5fa] p-2 rounded-lg border-white border-2'
+        >
+          <span set:html={t('home.wanna_be_exhibitor')} />
+          <svg
+            xmlns='http://www.w3.org/2000/svg'
+            fill='none'
+            viewBox='0 0 24 24'
+            stroke-width='1.5'
+            stroke='currentColor'
+            class='w-6 h-6'
+          >
+            <path
+              stroke-linecap='round'
+              stroke-linejoin='round'
+              d='M15.75 17.25 12 21m0 0-3.75-3.75M12 21V3'></path>
+          </svg>
+        </a>
+        <a
+          href='https://amofexpo.igeco.mx/'
+          target='_blank'
+          class='text-white font-bold flex gap-2 items-center bg-[#60a5fa] p-2 rounded-lg border-white border-2'
+        >
+          <span set:html={t('home.know_more')} />
+          <svg
+            xmlns='http://www.w3.org/2000/svg'
+            fill='none'
+            viewBox='0 0 24 24'
+            stroke-width='1.5'
+            stroke='currentColor'
+            class='w-6 h-6 rotate-[-90deg]'
+          >
+            <path
+              stroke-linecap='round'
+              stroke-linejoin='round'
+              d='M15.75 17.25 12 21m0 0-3.75-3.75M12 21V3'></path>
+          </svg>
+        </a>
+      </div>
     </section>
-    <div class='mt-10 flex gap-4'>
-      <a
-        href='#expositor-form'
-        class='text-white font-bold flex items-center gap-2 bg-[#60a5fa] p-2 rounded-lg border-white border-2'
-      >
-        <span set:html={t('home.wanna_be_exhibitor')} />
-        <svg
-          xmlns='http://www.w3.org/2000/svg'
-          fill='none'
-          viewBox='0 0 24 24'
-          stroke-width='1.5'
-          stroke='currentColor'
-          class='w-6 h-6'
-        >
-          <path
-            stroke-linecap='round'
-            stroke-linejoin='round'
-            d='M15.75 17.25 12 21m0 0-3.75-3.75M12 21V3'></path>
-        </svg>
-      </a>
-      <a
-        href='https://amofexpo.igeco.mx/'
-        target='_blank'
-        class='text-white font-bold flex gap-2 items-center bg-[#60a5fa] p-2 rounded-lg border-white border-2'
-      >
-        <span set:html={t('home.know_more')} />
-        <svg
-          xmlns='http://www.w3.org/2000/svg'
-          fill='none'
-          viewBox='0 0 24 24'
-          stroke-width='1.5'
-          stroke='currentColor'
-          class='w-6 h-6 rotate-[-90deg]'
-        >
-          <path
-            stroke-linecap='round'
-            stroke-linejoin='round'
-            d='M15.75 17.25 12 21m0 0-3.75-3.75M12 21V3'></path>
-        </svg>
-      </a>
-    </div>
+
     <div
       class='absolute top-0 left-0 w-full h-screen bg-black opacity-30 z-[-1]'
     >
