@@ -10,12 +10,12 @@ changeLanguage("en");
 <Layout title={t('site.title')} description={t('site.description')}>
   <main>
     <section
-      class='relative w-full h-screen grid place-items-center place-content-center px-4'
+      class='relative w-full h-screen grid place-items-center place-content-center px-4 bg-black md:bg-transparent'
     >
       <img
         src='/img/logonewAmof.webp'
         alt='americas mobility of the future'
-        class='w-52 absolute top-5 left-5'
+        class='w-52 relative md:absolute top-5 left-5 py-5'
       />
 
       <img
@@ -23,9 +23,9 @@ changeLanguage("en");
           ? '/img/amof_bf_2025.webp'
           : '/img/amof_bf_2025_eng.webp'}
         alt='americas mobility of the future'
-        class='absolute top-0 left-0 w-full h-screen object-cover z-[-2]'
+        class='absolute top-0 left-0 w-full h-screen object-cover z-[-2] hidden md:block'
       />
-      <p class='text-6xl font-bold text-center'>
+      <p class='text-4xl md:text-6xl font-bold text-center'>
         <span class='text-[#03CAFE]'>AMERICAS´<br /> mobi</span><span
           class='text-[#001A78]'>lity of the future</span
         >
@@ -33,10 +33,10 @@ changeLanguage("en");
       <p class='text-white font-bold text-3xl w-full text-center'>
         {t('home.slogan')}
       </p>
-      <p class='mt-5 text-white font-bold text-5xl'>
+      <p class='mt-5 text-white font-bold text-xl md:text-5xl'>
         {t('home.event_date')}
       </p>
-      <p class='text-white font-bold text-3xl'>
+      <p class='text-white font-bold text-lg md:text-3xl'>
         Poliforum - Léon Guanajuato, México
       </p>
       <div class='mt-10 flex gap-4'>
