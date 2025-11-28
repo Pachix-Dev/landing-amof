@@ -1,0 +1,33 @@
+---
+import { t } from "i18next";
+import TestimonialGrid from "./TestimonialGrid.jsx";
+
+// URLs de posts de Instagram (el componente agregará /embed automáticamente)
+const instagramVideos = [
+  "https://www.instagram.com/p/DQK5Uw0jRkv/",
+  "https://www.instagram.com/p/DQFDZv0De5o/",
+  "https://www.instagram.com/p/DPMXMhdDvLb/",
+  "https://www.instagram.com/p/DNrCSy8WNih/",
+  "https://www.instagram.com/p/DMYPBbbNYdH/",
+  "https://www.instagram.com/p/DA_MD9_CdlR/",
+];
+---
+
+<section
+  class="mt-10 py-10 container mx-auto"
+  id="visitantes"
+  data-aos="fade-zoom-in"
+  data-aos-easing="ease-in-back"
+  data-aos-delay="800"
+  data-aos-duration="1000"
+  data-aos-offset="0"
+  
+>
+  <h2
+    class="text-[#2366e7] text-4xl md:text-5xl font-extrabold text-center md:p-10 uppercase"
+  >
+    {t('home.testimonials')}
+  </h2>
+  <!-- Grid de videos de Instagram -->
+  <TestimonialGrid instagramUrls={instagramVideos} client:load />
+</section>

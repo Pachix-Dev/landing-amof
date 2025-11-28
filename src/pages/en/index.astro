@@ -3,6 +3,7 @@ import Layout from "../../layouts/Layout.astro";
 import { ContactForm } from "../../components/ContactForm.jsx";
 import i18next, { changeLanguage, t } from "i18next";
 import Categories from "../../components/Categories.astro";
+import Testimonials from "../../components/Testimonials.astro";
 
 changeLanguage("en");
 ---
@@ -115,37 +116,8 @@ changeLanguage("en");
     />
   </section>
   <Categories />
-  <section class='py-10 container mx-auto'>
-    <p class='text-3xl text-center font-bold text-gray-600 uppercase'>
-      {t('home.testimonials')}
-    </p>
-    <div class='mt-5 grid md:grid-cols-4'>
-      <div class='p-4'>
-        <lite-youtube
-          class='shadow-2xl shadow-white/10 rounded-lg md:h-96'
-          videoid='wjfs2AygD_U'
-          videotitle='CII IA'></lite-youtube>
-      </div>
-      <div class='p-4'>
-        <lite-youtube
-          class='shadow-2xl shadow-white/10 rounded-lg md:h-96'
-          videoid='RyWyLJzVM9s'
-          videotitle='Siemens'></lite-youtube>
-      </div>
-      <div class='p-4'>
-        <lite-youtube
-          class='shadow-2xl shadow-white/10 rounded-lg md:h-96'
-          videoid='e5cqOqNDdaE'
-          videotitle='Air mobility'></lite-youtube>
-      </div>
-      <div class='p-4'>
-        <lite-youtube
-          class='shadow-2xl shadow-white/10 rounded-lg md:h-96'
-          videoid='183Ds-5BatU'
-          videotitle='Air mobility'></lite-youtube>
-      </div>
-    </div>
-  </section>
+  <Testimonials />
+  </section> 
 </Layout>
 <footer
   class='border-t-2'
